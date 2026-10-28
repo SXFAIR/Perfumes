@@ -164,7 +164,7 @@ m|JPZ|Halloween Clásico EDT 100 ml|Dulce y especiada|N|Salidas, noches especial
 m|Lancôme|La Vie Est Belle EDP 100 ml|Dulce y gourmand · iris, vainilla|DN|Uso diario, cenas|50500|
 m|Lattafa|Eclaire EDP 100 ml|Dulce y gourmand · caramelo, leche, vainilla|N|Citas, clima fresco|21000|
 m|Lattafa|The Kingdom EDP 100 ml|Dulce y cálida|N|Citas, noches frescas|23000|
-m|Lattafa|Yara EDP 100 ml|Dulce y cremosa · vainilla, frutas|DN|Casual, citas|12000|r
+m|Lattafa|Yara EDP 100 ml|Dulce y cremosa · vainilla, frutas|DN|Casual, citas|17500|r
 m|Moschino|Toy 2 EDP 100 ml|Floral y frutal|DN|Casual, salidas|27500|
 m|Paco Rabanne|Olympea EDP 80 ml|Dulce y salina · vainilla, jazmín|N|Citas, fiestas|43500|
 m|Paco Rabanne|Pure XS EDP 80 ml|Dulce y especiada · vainilla|N|Fiestas, citas|44500|
@@ -282,7 +282,7 @@ var c=document.createElement("div");c.className="card";
 c.innerHTML='<div class="ph">'+(FOTOS[p.k]?'<img src="'+FOTOS[p.k]+'" alt="'+p.n+'" loading="lazy">':"🧴")+'</div><div class="brand">'+p.b+'</div><h2>'+p.n+'</h2><p class="notes">'+p.nt+'</p>'+acc(p.nt)
 +'<div class="when">'+p.t.map(function(x){return "<span>"+x+"</span>"}).join("")+'</div>'
 +'<p class="occ"><b>Ideal para:</b> '+p.o+'</p>'
-+'<div class="foot"><span class="price">'+(p.r&&p.price?"Desde ":"")+money(p.price)+'</span><button class="btn" data-k="'+p.k+'">Agregar 🛒</button></div>';
++'<div class="foot"><span class="price">'+money(p.price)+'</span><button class="btn" data-k="'+p.k+'">Agregar 🛒</button></div>';
 grid.appendChild(c)})}
 document.getElementById("tabs").addEventListener("click",function(e){
 var b=e.target.closest("button");if(!b)return;
